@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище aptekaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Apteka">
+          <Key>
+            <PropertyRef Name="IdApteka" />
+          </Key>
+          <Property Name="IdApteka" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="80" />
+          <Property Name="Adress" Type="nvarchar" MaxLength="80" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="80" />
+          <Property Name="Time" Type="nvarchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="Lekarstvo">
+          <Key>
+            <PropertyRef Name="IdLekarstvo" />
+          </Key>
+          <Property Name="IdLekarstvo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="80" />
+          <Property Name="Forma" Type="nvarchar" MaxLength="80" />
+          <Property Name="Doza" Type="nvarchar" MaxLength="80" />
+          <Property Name="Proiz" Type="nvarchar" MaxLength="80" />
+          <Property Name="Srok" Type="nvarchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="Nalichie">
+          <Key>
+            <PropertyRef Name="IdNalichie" />
+          </Key>
+          <Property Name="IdNalichie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdLekarstvo" Type="int" Nullable="false" />
+          <Property Name="IdApteka" Type="int" Nullable="false" />
+          <Property Name="Count" Type="nvarchar" MaxLength="80" />
+          <Property Name="Price" Type="nvarchar" MaxLength="80" />
+        </EntityType>
+        <Association Name="FK_Nalichie_Apteka">
+          <End Role="Apteka" Type="Self.Apteka" Multiplicity="1" />
+          <End Role="Nalichie" Type="Self.Nalichie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Apteka">
+              <PropertyRef Name="IdApteka" />
+            </Principal>
+            <Dependent Role="Nalichie">
+              <PropertyRef Name="IdApteka" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Nalichie_Lekarstvo">
+          <End Role="Lekarstvo" Type="Self.Lekarstvo" Multiplicity="1" />
+          <End Role="Nalichie" Type="Self.Nalichie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lekarstvo">
+              <PropertyRef Name="IdLekarstvo" />
+            </Principal>
+            <Dependent Role="Nalichie">
+              <PropertyRef Name="IdLekarstvo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище aptekaModelContainer">
+          <EntitySet Name="Apteka" EntityType="Self.Apteka" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lekarstvo" EntityType="Self.Lekarstvo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Nalichie" EntityType="Self.Nalichie" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Nalichie_Apteka" Association="Self.FK_Nalichie_Apteka">
+            <End Role="Apteka" EntitySet="Apteka" />
+            <End Role="Nalichie" EntitySet="Nalichie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Nalichie_Lekarstvo" Association="Self.FK_Nalichie_Lekarstvo">
+            <End Role="Lekarstvo" EntitySet="Lekarstvo" />
+            <End Role="Nalichie" EntitySet="Nalichie" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="aptekaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Apteka">
+          <Key>
+            <PropertyRef Name="IdApteka" />
+          </Key>
+          <Property Name="IdApteka" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Adress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Time" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Nalichie" Relationship="Self.FK_Nalichie_Apteka" FromRole="Apteka" ToRole="Nalichie" />
+        </EntityType>
+        <EntityType Name="Lekarstvo">
+          <Key>
+            <PropertyRef Name="IdLekarstvo" />
+          </Key>
+          <Property Name="IdLekarstvo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Forma" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Doza" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Proiz" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Srok" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Nalichie" Relationship="Self.FK_Nalichie_Lekarstvo" FromRole="Lekarstvo" ToRole="Nalichie" />
+        </EntityType>
+        <EntityType Name="Nalichie">
+          <Key>
+            <PropertyRef Name="IdNalichie" />
+          </Key>
+          <Property Name="IdNalichie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdLekarstvo" Type="Int32" Nullable="false" />
+          <Property Name="IdApteka" Type="Int32" Nullable="false" />
+          <Property Name="Count" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Apteka" Relationship="Self.FK_Nalichie_Apteka" FromRole="Nalichie" ToRole="Apteka" />
+          <NavigationProperty Name="Lekarstvo" Relationship="Self.FK_Nalichie_Lekarstvo" FromRole="Nalichie" ToRole="Lekarstvo" />
+        </EntityType>
+        <Association Name="FK_Nalichie_Apteka">
+          <End Role="Apteka" Type="Self.Apteka" Multiplicity="1" />
+          <End Role="Nalichie" Type="Self.Nalichie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Apteka">
+              <PropertyRef Name="IdApteka" />
+            </Principal>
+            <Dependent Role="Nalichie">
+              <PropertyRef Name="IdApteka" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Nalichie_Lekarstvo">
+          <End Role="Lekarstvo" Type="Self.Lekarstvo" Multiplicity="1" />
+          <End Role="Nalichie" Type="Self.Nalichie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lekarstvo">
+              <PropertyRef Name="IdLekarstvo" />
+            </Principal>
+            <Dependent Role="Nalichie">
+              <PropertyRef Name="IdLekarstvo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="aptekaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Apteka" EntityType="Self.Apteka" />
+          <EntitySet Name="Lekarstvo" EntityType="Self.Lekarstvo" />
+          <EntitySet Name="Nalichie" EntityType="Self.Nalichie" />
+          <AssociationSet Name="FK_Nalichie_Apteka" Association="Self.FK_Nalichie_Apteka">
+            <End Role="Apteka" EntitySet="Apteka" />
+            <End Role="Nalichie" EntitySet="Nalichie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Nalichie_Lekarstvo" Association="Self.FK_Nalichie_Lekarstvo">
+            <End Role="Lekarstvo" EntitySet="Lekarstvo" />
+            <End Role="Nalichie" EntitySet="Nalichie" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище aptekaModelContainer" CdmEntityContainer="aptekaEntities">
+          <EntitySetMapping Name="Apteka">
+            <EntityTypeMapping TypeName="aptekaModel.Apteka">
+              <MappingFragment StoreEntitySet="Apteka">
+                <ScalarProperty Name="IdApteka" ColumnName="IdApteka" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Adress" ColumnName="Adress" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lekarstvo">
+            <EntityTypeMapping TypeName="aptekaModel.Lekarstvo">
+              <MappingFragment StoreEntitySet="Lekarstvo">
+                <ScalarProperty Name="IdLekarstvo" ColumnName="IdLekarstvo" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Forma" ColumnName="Forma" />
+                <ScalarProperty Name="Doza" ColumnName="Doza" />
+                <ScalarProperty Name="Proiz" ColumnName="Proiz" />
+                <ScalarProperty Name="Srok" ColumnName="Srok" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Nalichie">
+            <EntityTypeMapping TypeName="aptekaModel.Nalichie">
+              <MappingFragment StoreEntitySet="Nalichie">
+                <ScalarProperty Name="IdNalichie" ColumnName="IdNalichie" />
+                <ScalarProperty Name="IdLekarstvo" ColumnName="IdLekarstvo" />
+                <ScalarProperty Name="IdApteka" ColumnName="IdApteka" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
