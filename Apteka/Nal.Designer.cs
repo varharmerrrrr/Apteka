@@ -50,10 +50,12 @@
             // 
             // comboBoxLekarstvo
             // 
+            this.comboBoxLekarstvo.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxLekarstvo.FormattingEnabled = true;
-            this.comboBoxLekarstvo.Location = new System.Drawing.Point(492, 63);
+            this.comboBoxLekarstvo.Location = new System.Drawing.Point(655, 107);
+            this.comboBoxLekarstvo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxLekarstvo.Name = "comboBoxLekarstvo";
-            this.comboBoxLekarstvo.Size = new System.Drawing.Size(237, 21);
+            this.comboBoxLekarstvo.Size = new System.Drawing.Size(315, 26);
             this.comboBoxLekarstvo.TabIndex = 41;
             // 
             // listViewNal
@@ -66,10 +68,11 @@
             this.listViewNal.FullRowSelect = true;
             this.listViewNal.GridLines = true;
             this.listViewNal.HideSelection = false;
-            this.listViewNal.Location = new System.Drawing.Point(14, 7);
+            this.listViewNal.Location = new System.Drawing.Point(19, 10);
+            this.listViewNal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewNal.MultiSelect = false;
             this.listViewNal.Name = "listViewNal";
-            this.listViewNal.Size = new System.Drawing.Size(471, 299);
+            this.listViewNal.Size = new System.Drawing.Size(627, 412);
             this.listViewNal.TabIndex = 39;
             this.listViewNal.UseCompatibleStateImageBehavior = false;
             this.listViewNal.View = System.Windows.Forms.View.Details;
@@ -97,9 +100,11 @@
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(651, 163);
+            this.buttonDel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDel.Location = new System.Drawing.Point(655, 385);
+            this.buttonDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(75, 23);
+            this.buttonDel.Size = new System.Drawing.Size(112, 37);
             this.buttonDel.TabIndex = 38;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = true;
@@ -107,9 +112,11 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(570, 163);
+            this.buttonEdit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEdit.Location = new System.Drawing.Point(655, 345);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdit.Size = new System.Drawing.Size(112, 37);
             this.buttonEdit.TabIndex = 37;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = true;
@@ -117,9 +124,11 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(489, 163);
+            this.buttonAdd.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.Location = new System.Drawing.Point(655, 305);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(112, 37);
             this.buttonAdd.TabIndex = 36;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -128,76 +137,92 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(491, 12);
+            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(651, 15);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(53, 18);
             this.label4.TabIndex = 35;
             this.label4.Text = "Аптека";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(488, 51);
+            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(652, 85);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.Size = new System.Drawing.Size(74, 18);
             this.label3.TabIndex = 34;
             this.label3.Text = "Лекарство";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(491, 87);
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(651, 154);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(52, 18);
             this.label2.TabIndex = 33;
             this.label2.Text = "Кол-во";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(489, 123);
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(654, 223);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(41, 18);
             this.label1.TabIndex = 32;
             this.label1.Text = "Цена";
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(492, 137);
+            this.textBoxPrice.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPrice.Location = new System.Drawing.Point(655, 245);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(237, 20);
+            this.textBoxPrice.Size = new System.Drawing.Size(315, 26);
             this.textBoxPrice.TabIndex = 31;
             // 
             // textBoxCount
             // 
-            this.textBoxCount.Location = new System.Drawing.Point(492, 100);
+            this.textBoxCount.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxCount.Location = new System.Drawing.Point(655, 176);
+            this.textBoxCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxCount.Name = "textBoxCount";
-            this.textBoxCount.Size = new System.Drawing.Size(237, 20);
+            this.textBoxCount.Size = new System.Drawing.Size(315, 26);
             this.textBoxCount.TabIndex = 30;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Apteka.Properties.Resources._111;
-            this.pictureBox1.Location = new System.Drawing.Point(560, 192);
+            this.pictureBox1.Location = new System.Drawing.Point(835, 289);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 125);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 134);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
             // comboBoxApteka
             // 
+            this.comboBoxApteka.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxApteka.FormattingEnabled = true;
-            this.comboBoxApteka.Location = new System.Drawing.Point(489, 28);
+            this.comboBoxApteka.Location = new System.Drawing.Point(655, 37);
+            this.comboBoxApteka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxApteka.Name = "comboBoxApteka";
-            this.comboBoxApteka.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxApteka.Size = new System.Drawing.Size(319, 26);
             this.comboBoxApteka.TabIndex = 42;
             // 
             // Nal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 324);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
+            this.ClientSize = new System.Drawing.Size(1035, 440);
             this.Controls.Add(this.comboBoxApteka);
             this.Controls.Add(this.comboBoxLekarstvo);
             this.Controls.Add(this.pictureBox1);
@@ -211,6 +236,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.textBoxCount);
+            this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Nal";
             this.Text = "Наличие";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

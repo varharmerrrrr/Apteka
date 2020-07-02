@@ -50,73 +50,92 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(490, 33);
+            this.textBoxName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxName.Location = new System.Drawing.Point(652, 44);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(237, 20);
+            this.textBoxName.Size = new System.Drawing.Size(315, 26);
             this.textBoxName.TabIndex = 0;
             // 
             // textBoxAdress
             // 
-            this.textBoxAdress.Location = new System.Drawing.Point(490, 69);
+            this.textBoxAdress.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxAdress.Location = new System.Drawing.Point(652, 114);
+            this.textBoxAdress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAdress.Name = "textBoxAdress";
-            this.textBoxAdress.Size = new System.Drawing.Size(237, 20);
+            this.textBoxAdress.Size = new System.Drawing.Size(315, 26);
             this.textBoxAdress.TabIndex = 1;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(490, 105);
+            this.textBoxPhone.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPhone.Location = new System.Drawing.Point(652, 183);
+            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(237, 20);
+            this.textBoxPhone.Size = new System.Drawing.Size(315, 26);
             this.textBoxPhone.TabIndex = 2;
             // 
             // textBoxTime
             // 
-            this.textBoxTime.Location = new System.Drawing.Point(490, 142);
+            this.textBoxTime.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxTime.Location = new System.Drawing.Point(652, 252);
+            this.textBoxTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTime.Name = "textBoxTime";
-            this.textBoxTime.Size = new System.Drawing.Size(237, 20);
+            this.textBoxTime.Size = new System.Drawing.Size(315, 26);
             this.textBoxTime.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(489, 128);
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(649, 230);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.Size = new System.Drawing.Size(89, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Часы работы";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(489, 92);
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(649, 161);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(63, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Телефон";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(489, 53);
+            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(649, 92);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(47, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "Адрес";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(489, 17);
+            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(649, 22);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.Size = new System.Drawing.Size(68, 18);
             this.label4.TabIndex = 7;
             this.label4.Text = "Название";
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(490, 168);
+            this.buttonAdd.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.Location = new System.Drawing.Point(652, 296);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(115, 42);
             this.buttonAdd.TabIndex = 8;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -124,9 +143,11 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(571, 168);
+            this.buttonEdit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEdit.Location = new System.Drawing.Point(652, 346);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdit.Size = new System.Drawing.Size(115, 42);
             this.buttonEdit.TabIndex = 9;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = true;
@@ -134,9 +155,11 @@
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(652, 168);
+            this.buttonDel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDel.Location = new System.Drawing.Point(652, 396);
+            this.buttonDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(75, 23);
+            this.buttonDel.Size = new System.Drawing.Size(115, 42);
             this.buttonDel.TabIndex = 10;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = true;
@@ -152,10 +175,11 @@
             this.listViewApteka.FullRowSelect = true;
             this.listViewApteka.GridLines = true;
             this.listViewApteka.HideSelection = false;
-            this.listViewApteka.Location = new System.Drawing.Point(12, 12);
+            this.listViewApteka.Location = new System.Drawing.Point(16, 17);
+            this.listViewApteka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewApteka.MultiSelect = false;
             this.listViewApteka.Name = "listViewApteka";
-            this.listViewApteka.Size = new System.Drawing.Size(471, 299);
+            this.listViewApteka.Size = new System.Drawing.Size(627, 419);
             this.listViewApteka.TabIndex = 11;
             this.listViewApteka.UseCompatibleStateImageBehavior = false;
             this.listViewApteka.View = System.Windows.Forms.View.Details;
@@ -184,18 +208,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Apteka.Properties.Resources._111;
-            this.pictureBox1.Location = new System.Drawing.Point(497, 198);
+            this.pictureBox1.Location = new System.Drawing.Point(775, 296);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(193, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // Apt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 324);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
+            this.ClientSize = new System.Drawing.Size(984, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listViewApteka);
             this.Controls.Add(this.buttonDel);
@@ -209,9 +235,13 @@
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.textBoxAdress);
             this.Controls.Add(this.textBoxName);
+            this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Apt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Аптеки";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
